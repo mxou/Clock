@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    background: url(./Animated\ Shape.svg);
+}
+
+#clock_body {
+    width: 40vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5rem;
+    gap: 5rem;
+}
+
+#hours,
+#minutes,
+#seconds {
+    padding: 10px;
+    /* From https://css.glass */
+        background: rgba(255, 255, 255, 0);
+        border-radius: 19px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
